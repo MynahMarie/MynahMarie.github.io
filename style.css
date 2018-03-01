@@ -1,0 +1,56 @@
+/* white #f6f7f8
+blue #20a4f3
+turquoise #2ec4b6
+red #ff3366
+black #011627 */
+
+/* TACHYONS OVERIDES */
+.custom-white {
+  color: #f6f7f8;
+}
+
+.bg-custom-white {
+  background-color: #f6f7f8;
+}
+
+.custom-red {
+  color: #ff3366;
+}
+
+.bg-custom-red {
+  background-color: #ff3366;
+}
+
+.custom-turquoise {
+  color: #2ec4b6;
+}
+
+.bg-custom-turquoise {
+  background-color: #2ec4b6;
+}
+
+.custom-blue {
+  color: #20a4f3;
+}
+
+.bg-custom-blue {
+  background-color: #20a4f3;
+}
+
+.custom-black {
+  color: #011627;
+}
+
+.bg-custom-black {
+  background-color: #011627;
+}
+
+/* Text */
+
+.header-font {
+  font-family: 'Stardos Stencil', cursive;
+}
+
+.nav-links {
+  font-family: 'Work Sans', sans-serif;
+}
