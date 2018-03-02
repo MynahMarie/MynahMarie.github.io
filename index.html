@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rajdhani|Stardos+Stencil" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
   </head>
   <body>
 
   <!-- Navbar -->
-    <nav class="fixed db dt-l w-100 border-box pa2 ph5-l bg-custom-black">
-  <a class="db dtc-l v-mid custom-red link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
+    <nav class="fixed-ns db dt-l w-100 border-box pa2 ph5-l bg-custom-black">
+  <a class="db dtc-l v-mid custom-black link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
     <img id="splashIntro" href="#top" src="./images/logo2.png" class="dib w3 h3 pa0" alt="Mynah Logo">
   </a>
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-    <a class="link dim custom-red f6 f4-l dib mr3 mr4-l nav-links" href="#about" title="About">About</a>
-    <a class="link dim custom-red f6 f4-l dib mr3 mr4-l nav-links" href="#projects" title="Projects">Projects</a>
-    <a class="link dim custom-red f6 f4-l dib nav-links" href="#contact" title="Contact">Contact</a>
+    <a class="link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#about" title="About">About</a>
+    <a class="link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#projects" title="Projects">Projects</a>
+    <a class="link dim custom-red f5 f4-ns dib sub-header-font" href="#contact" title="Contact">Contact</a>
   </div>
 </nav>
 
 <!-- Splash Page -->
-    <article class="vh-100 dt w-100 bg-custom-blue">
+
+    <article class="vh-100 dt w-100 bg-custom-white">
     <div class="dtc v-mid tc ph3">
       <div class="mw6 center">
       <h1 id="typeWriter" class="header-font custom-black f1-ns f3 fw3 tc tracked ttu lh-title">
@@ -33,71 +33,111 @@
   </article>
 
   <!-- About -->
-  <article id="about" class="bg-custom-white w-100 vh-100">
-    <div class="mw8 center">
-    <h1 class="custom-black ma0 pt6">About</h1>
+  <article id="about" class="bg-custom-blue w-100 vh-100">
+    <div class="mw8-ns center content">
+    <h1 class="custom-white ma0 pt6-ns header-font">About</h1>
+
+    <div class="fl w-100 w-50-ns bg-custom-blue b-custom-white tj ba b--dashed bw5-ns bw3 mt5-ns">
+      <p class="small-text-font pa4 custom-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+         Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+         Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+         Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+         viverra quis, feugiat a, tellus. </p>
+  </div>
+  <div class="fl w-100 w-50-ns bg-custom-white tj b-custom-blue ba b--dashed bw5-ns bw3 mt5-ns">
+    <p class=" small-text-font pa4 custom-blue">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+       Aenean imperdiet. Etiam ultricies nisi vel augue.
+      Curabitur ullamcorper ultricies nisi. Nam eget dui.
+      Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+      sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+      Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+      Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
+      nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+      nunc augue velit cursus nunc
+    </p>
+  </div>
+
   </div>
   </article>
 
 <!-- Projects -->
 
-    <article id="projects" class="bg-custom-red w-100 vh-100">
+    <article id="projects" class="bg-custom-red w-100 vh-100-ns">
       <div class="mw8 center">
-      <h1 class="custom-black ma0 pt6">Projects</h1>
+      <h1 class="custom-black ma0 pt6-ns header-font">Projects</h1>
     </div>
 
 <div class="pa3 flex flex-wrap mw8 center">
 
-    <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+    <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
   <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
   <div class="pa2 ph3-ns pb3-ns bg-custom-white">
     <div class="dt w-100 mt1">
       <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Cat</h1>
+        <h1 class="f5 f4-ns mv0">Nerv</h1>
       </div>
       <div class="dtc tr">
-        <h2 class="f5 mv0">$1,000</h2>
+        <h2 class="f5 mv0"></h2>
       </div>
     </div>
     <p class="f6 lh-copy measure mt2 mid-gray">
-      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
-      and touch water with paw then recoil in horror.
+      D3js/Handlebars/Express
     </p>
   </div>
 </article>
 
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
   <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
   <div class="pa2 ph3-ns pb3-ns bg-custom-white">
     <div class="dt w-100 mt1">
       <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Cat</h1>
+        <h1 class="f5 f4-ns mv0">EasyRep</h1>
       </div>
       <div class="dtc tr">
-        <h2 class="f5 mv0">$1,000</h2>
+        <h2 class="f5 mv0"></h2>
       </div>
     </div>
     <p class="f6 lh-copy measure mt2 mid-gray">
-      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
-      and touch water with paw then recoil in horror.
+      React&Redux/Express/MongoDb
     </p>
   </div>
 </article>
 
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
   <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
   <div class="pa2 ph3-ns pb3-ns bg-custom-white">
     <div class="dt w-100 mt1">
       <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Cat</h1>
+        <h1 class="f5 f4-ns mv0">AudioVisualiser</h1>
       </div>
       <div class="dtc tr">
-        <h2 class="f5 mv0">$1,000</h2>
+        <h2 class="f5 mv0"></h2>
       </div>
     </div>
     <p class="f6 lh-copy measure mt2 mid-gray">
-      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
-      and touch water with paw then recoil in horror.
+      Canvas/WebAudioAPI/Node
+    </p>
+  </div>
+</article>
+
+<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
+  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+  <div class="pa2 ph3-ns pb3-ns bg-custom-white">
+    <div class="dt w-100 mt1">
+      <div class="dtc">
+        <h1 class="f5 f4-ns mv0">Memory Game</h1>
+      </div>
+      <div class="dtc tr">
+        <h2 class="f5 mv0"></h2>
+      </div>
+    </div>
+    <p class="f6 lh-copy measure mt2 mid-gray">
+      Elm
     </p>
   </div>
 </article>
@@ -107,13 +147,47 @@
 
     <!-- Contact -->
 
-    <article id="contact" class="bg-custom-white w-100 vh-100">
-      <div class="mw8 center">
-      <h1 class="custom-black ma0 pt6">Contact</h1>
+
+    <article id="contact" class="bg-custom-black w-100 vh-100">
+
+      <div class="w-80-ns w-100 center bg-custom-white pt5-ns">
+<div class="pt5-ns">
+      <h1 class="custom-black mv0 header-font ml4">Contact</h>
+</div>
+    <div class="pt4 black-80">
+  <form class="measure center pb6">
+
+    <fieldset id="subject" class="ba b--transparent ph0 mh0">
+      <legend class="f4 fw6 ph0 mh0 sub-header-font">Questions?</legend>
+      <div class="mt3">
+        <label class="small-text-font db fw6 lh-copy f5" for="subject">Subject</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-custom-black hover-white w-100" type="text" name="subject"  id="email-subject">
+      </div>
+
+      <div class="mv3">
+        <label class="small-text-font db fw6 lh-copy f5" for="message">Message</label>
+      <textarea id="email-message" name="email-message"
+      class="db input-reset hover-bg-custom-black bg-transparent border-box hover-white w-100 measure ba pa2 mb2"
+      aria-describedby="message"></textarea>
+      </div>
+
+      <div class="mt3">
+        <label class=" small-text-font db fw6 lh-copy f5" for="subject">Your Email</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-custom-black hover-white w-100" type="email" name="email-address"  id="email-address">
+      </div>
+    </fieldset>
+
+    <div>
+      <input class="header-font hover-bg-custom-red hover-white mt3 b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f4 dib" type="submit" value="Send">
     </div>
-    </article>
-
-
+  </form>
+</div>
+</div>
+</article>
+<!-- Footer -->
+<footer class="w-100 ph3 ph5-m ph6-l mid-gray bg-custom-black pb2 pt3">
+  <small class="small-text-font f6 pb3 db tc silver fw1">© 2018 <b class="ttu">Mynah Marie</b>., All Rights Reserved</small>
+</footer>
     <script type="text/javascript" src='main.js'></script>
   </body>
 </html>

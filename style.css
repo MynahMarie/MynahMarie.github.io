@@ -45,12 +45,54 @@ black #011627 */
   background-color: #011627;
 }
 
+.b--custom-blue {
+  border-color: #20a4f3;
+}
+
 /* Text */
 
 .header-font {
   font-family: 'Stardos Stencil', cursive;
 }
 
-.nav-links {
-  font-family: 'Work Sans', sans-serif;
+.sub-header-font {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.small-text-font {
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Borders */
+
+.b-custom-white {
+  border-color: #f6f7f8;
+}
+
+.b-custom-blue {
+  border-color: #20a4f3;
+}
+
+.b-custom--dashed-left {
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #f6f7f8;
+}
+
+.b-custom--dashed-right {
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-color: #20a4f3;
+}
+
+/* Hovers */
+
+.hover-bg-custom-black:hover {
+    background-color: #011627;
+}
+
+.hover-bg-custom-red:hover {
+  background-color: #ff3366;
 }
