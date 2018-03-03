@@ -112,4 +112,78 @@ black #011627 */
 
  }
 
- .bg-custom-black-40: var(custom-black);
+   .tagsTxT {
+       -webkit-transition: color 1s, border-color 1s; /* Safari */
+       transition: color 1s;
+   }
+
+   .tagsTxT:hover {
+       color: #011627;
+
+    }
+
+   #tagGit {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagGit:hover {
+    background-color: #f6f7f8;
+    border-radius: 22%;
+    /* border-color: gray; */
+   }
+
+   #tagGH {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagGH:hover {
+      background-color: #2ec4b6;
+      border-radius: 22%;
+      /* border-color: gray; */
+   }
+
+   #tagAgile {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagAgile:hover {
+      background-color: #E7040F;
+      border-radius: 22%;
+      /* border-color: gray; */
+   }
+
+   #tagTDD {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagTDD:hover {
+        background-color: #FFD700;
+        border-radius: 22%;
+        /* border-color: gray; */
+   }
+
+   #tagPsql {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagPsql:hover {
+      background-color: #20a4f3;
+      border-radius: 16.5%;
+      /* border-color: gray; */
+   }
+
+   #tagJs {
+     -webkit-transition: background-color 1.5s, border-radius 2s; /* Safari */
+     transition: background-color 1.5s, border-radius 2s;
+   }
+
+   #tagJs:hover {
+      background-color: #9EEBCF;
+      border-radius: 16.5%;
+      /* border-color: gray; */
+   }
