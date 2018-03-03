@@ -93,6 +93,23 @@ black #011627 */
     background-color: #011627;
 }
 
+.hover-bg-custom-blue:hover {
+  background-color: #20a4f3;
+}
+
 .hover-bg-custom-red:hover {
   background-color: #ff3366;
 }
+
+.social {
+    -webkit-transition: padding-left 2s; /* Safari */
+    transition: padding-left 2s;
+}
+
+.social:hover {
+    padding-left: 60px;
+      /* background-color: #20a4f3; */
+
+ }
+
+ .bg-custom-black-40: var(custom-black);

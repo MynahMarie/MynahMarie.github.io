@@ -9,7 +9,6 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   } else {
     i = 0;
-    document.getElementById('splashIntro').setAttribute('onclick') = typeWriter;
   }
 }
 
@@ -20,3 +19,11 @@ document.getElementById('splashIntro').addEventListener('click', function() {
   document.getElementById('typeWriter').textContent = "";
   setTimeout(typeWriter, 500);
 });
+
+
+function noscroll() {
+  window.scrollTo( 0, 0 );
+}
+
+// add listener to disable scroll
+window.addEventListener('scroll', noscroll);

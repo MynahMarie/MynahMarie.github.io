@@ -13,18 +13,18 @@
   <!-- Navbar -->
     <nav class="fixed-ns db dt-l w-100 border-box pa2 ph5-l bg-custom-black">
   <a class="db dtc-l v-mid custom-black link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
-    <img id="splashIntro" href="#top" src="./images/logo2.png" class="dib w3 h3 pa0" alt="Mynah Logo">
+    <img id="splashIntro" onclick="window.removeEventListener('scroll', noscroll);" src="./images/logo2.png" class="nav-link dib w3 h3 pa0" alt="Mynah Logo">
   </a>
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-    <a class="link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#about" title="About">About</a>
-    <a class="link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#projects" title="Projects">Projects</a>
-    <a class="link dim custom-red f5 f4-ns dib sub-header-font" href="#contact" title="Contact">Contact</a>
+    <a onclick="window.removeEventListener('scroll', noscroll);" class="nav-link link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#about" title="About">About</a>
+    <a onclick="window.removeEventListener('scroll', noscroll);" class="nav-link link dim custom-red f5 f4-ns dib mr3 mr4-l sub-header-font" href="#projects" title="Projects">Projects</a>
+    <a onclick="window.removeEventListener('scroll', noscroll);" class="nav-link link dim custom-red f5 f4-ns dib sub-header-font" href="#contact" title="Contact">Contact</a>
   </div>
 </nav>
 
 <!-- Splash Page -->
 
-    <article class="vh-100 dt w-100 bg-custom-white">
+    <article id="home" class="vh-100 dt w-100 bg-custom-white">
     <div class="dtc v-mid tc ph3">
       <div class="mw6 center">
       <h1 id="typeWriter" class="header-font custom-black f1-ns f3 fw3 tc tracked ttu lh-title">
@@ -48,6 +48,7 @@
          Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
          Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
          viverra quis, feugiat a, tellus. </p>
+
   </div>
   <div class="fl w-100 w-50-ns bg-custom-white tj b-custom-blue ba b--dashed bw5-ns bw3 mt5-ns">
     <p class=" small-text-font pa4 custom-blue">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
@@ -69,96 +70,123 @@
 
     <article id="projects" class="bg-custom-red w-100 vh-100-ns">
       <div class="mw8 center">
-      <h1 class="custom-black ma0 pt6-ns header-font">Projects</h1>
+      <h1 class="pl3 ml1 custom-black ma0 pt6-ns header-font">Projects</h1>
     </div>
 
-<div class="pa3 flex flex-wrap mw8 center">
-
-    <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
-  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
-  <div class="pa2 ph3-ns pb3-ns bg-custom-white">
-    <div class="dt w-100 mt1">
-      <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Nerv</h1>
-      </div>
-      <div class="dtc tr">
-        <h2 class="f5 mv0"></h2>
-      </div>
+<section class="cf mw8 center pa2-ns mt5">
+  <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <a style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
+      class="hide-child grow dt bg-center cover aspect-ratio--object">
+      <span class="header-font ttu tracked f4 pointer  dtc tc v-mid w-100 h-100 child bg-custom-black pa4">
+        <span class="white">Handlebars</span></br>
+        <span class="light-green">HTML5</span></br>
+        <span class="custom-blue">D3.js</span></br>
+        <span class="dark-red">Express</span>
+      </span>
+    </a>
     </div>
-    <p class="f6 lh-copy measure mt2 mid-gray">
-      D3js/Handlebars/Express
-    </p>
-  </div>
-</article>
-
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
-  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
-  <div class="pa2 ph3-ns pb3-ns bg-custom-white">
-    <div class="dt w-100 mt1">
-      <div class="dtc">
-        <h1 class="f5 f4-ns mv0">EasyRep</h1>
-      </div>
-      <div class="dtc tr">
-        <h2 class="f5 mv0"></h2>
-      </div>
+    <span href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f4 f3-ns mb0 white sub-header-font">Nerv</h3>
+      <h3 class="f5 f4 white fw4 mt2 small-text-font">News Aggregator with Sentiment Analysis</h3>
+    </span>
+  </article>
+  <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <a style="background-image:url(http://mrmrs.github.io/images/0002.jpg);"
+      class="grow hide-child dt bg-center cover aspect-ratio--object" >
+      <span class="header-font ttu tracked f4 pointer dtc tc v-mid w-100 h-100 child bg-custom-black pa5">
+        <span class="white">React</span></br>
+        <span class="light-green">Redux</span>
+        <span class="blue">MongoDB</span></br>
+        <span class="dark-red">Express</span>
+      </span>
+    </a>
     </div>
-    <p class="f6 lh-copy measure mt2 mid-gray">
-      React&Redux/Express/MongoDb
-    </p>
-  </div>
-</article>
-
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
-  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
-  <div class="pa2 ph3-ns pb3-ns bg-custom-white">
-    <div class="dt w-100 mt1">
-      <div class="dtc">
-        <h1 class="f5 f4-ns mv0">AudioVisualiser</h1>
-      </div>
-      <div class="dtc tr">
-        <h2 class="f5 mv0"></h2>
-      </div>
+    <span href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f4 f3-ns mb0 white sub-header-font">EasyRep</h3>
+      <h3 class="f5 f4 fw4 mt2 white small-text-font">Mobile App for Reporting Environmental Hazards</h3>
+    </span>
+  </article>
+  <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <a style="background-image:url(http://mrmrs.github.io/images/0003.jpg);"
+      class="grow dt hide-child bg-center cover aspect-ratio--object" >
+      <span class="header-font ttu tracked f4 pointer white dtc tc v-mid w-100 h-100 child bg-custom-black ph5 pv4">
+        <span class="light-green">Canvas</span></br>
+        <span class="blue">Web Audio API</span>
+        <span class="dark-red">Node.js</span>
+      </span>
+    </a>
     </div>
-    <p class="f6 lh-copy measure mt2 mid-gray">
-      Canvas/WebAudioAPI/Node
-    </p>
-  </div>
-</article>
-
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center grow">
-  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
-  <div class="pa2 ph3-ns pb3-ns bg-custom-white">
-    <div class="dt w-100 mt1">
-      <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Memory Game</h1>
-      </div>
-      <div class="dtc tr">
-        <h2 class="f5 mv0"></h2>
-      </div>
+    <span href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f4 f3-ns mb0 white  sub-header-font">Audio Visualizer</h3>
+      <h3 class="f5 f4 fw4 mt2 white small-text-font">Visualizations on pre-selected tracks</h3>
+    </span>
+  </article>
+  <article id="rotate" class="fl w-100 w-50-m  w-25-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <a style="background-image:url(http://mrmrs.github.io/images/0004.jpg);"
+      class="grow dt hide-child bg-center cover aspect-ratio--object" >
+      <span class="header-font ttu tracked f4 pointer white dtc tc v-mid w-100 h-100 child bg-custom-black pa5">
+        <span class="red">Elm</span></br>
+        <span class="light-green">HTML5</span>
+      </span>
+    </a>
     </div>
-    <p class="f6 lh-copy measure mt2 mid-gray">
-      Elm
-    </p>
-  </div>
-</article>
-
+    <span href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f4 f3-ns mb0 white sub-header-font">Magic Match</h3>
+      <h3 class="f5 f4 fw4 mt2 white small-text-font">Card Memory Game</h3>
+    </span>
+  </article>
+</section>
+<div class="mw8 center">
+  <ul class="tc list ph3 ph5-ns pv4">
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim ba b-custom-white">Git</a></li>
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim custom-turquoise ba b-custom-white">Github</a></li>
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim dark-red ba b-custom-white">Agile</a></li>
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim custom-blue ba b-custom-white">Postgresql</a></li>
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim light-green ba b-custom-white">Javascript</a></li>
+    <li class="dib mr1 mb2"><span class="sub-header-font bg-custom-black custom-white f5 f4-ns b db pa2 link dim yellow ba b-custom-white">TDD</a></li>
+  </ul>
 </div>
 </article>
 
     <!-- Contact -->
 
 
-    <article id="contact" class="bg-custom-black w-100 vh-100">
+    <article id="contact" class="bg-custom-black w-100 vh-100 ">
 
       <div class="w-80-ns w-100 center bg-custom-white pt5-ns">
 <div class="pt5-ns">
-      <h1 class="custom-black mv0 header-font ml4">Contact</h>
+      <h1 class="custom-black mv0 header-font pl3 pt2 ml4 ">Contact</h>
 </div>
-    <div class="pt4 black-80">
-  <form class="measure center pb6">
 
+    <div class="pt4 black-80 pb5">
+      <article class="cf">
+        <div class="fl w-100 w-25-ns bg-custom-white pt4-ns">
+            <nav class="pt4 mb0 ml4">
+              <ul class="list pl3">
+              <li class="social"><a class=" no-underline custom-white bg-animate bg-custom-red hover-bg-custom-blue inline-flex items-center ma2  tc br2 pa2" href="https://github.com/mrmrs" title="GitHub">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+                <span class="f5 ml3 pr3 small-text-font">GitHub</span>
+              </a></li>
+              <li class="social"><a class="no-underline custom-white bg-animate bg-custom-red hover-bg-custom-blue inline-flex items-center ma2  tc br2 pa2" href="https://linkedin.com title="LinkedIn">
+                <svg class="dib h2 w2 " fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+                <span class="f6 ml3 pr2 small-text-font">LinkedIn</span>
+              </a></li>
+              <li class="social"><a class="no-underline custom-white bg-animate bg-custom-red hover-bg-custom-blue inline-flex items-center ma2  tc br2 pa2" href="https://twitter.com/mrmrs_" title="Twitter">
+                <svg class="dib h2 w2 " fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+                <span class="f5 ml3 pr2 small-text-font">Twitter</span>
+              </a></li>
+            </ul>
+            </nav>
+          </div>
+
+      <div class="fl w-100 w-75-ns bg-custom-white">
+  <form class="measure ml6-ns pb5">
     <fieldset id="subject" class="ba b--transparent ph0 mh0">
-      <legend class="f4 fw6 ph0 mh0 sub-header-font">Questions?</legend>
+      <legend class="f3 fw5 ph0 mh0 sub-header-font">Questions?</legend>
       <div class="mt3">
         <label class="small-text-font db fw6 lh-copy f5" for="subject">Subject</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-custom-black hover-white w-100" type="text" name="subject"  id="email-subject">
@@ -182,12 +210,14 @@
     </div>
   </form>
 </div>
-</div>
 </article>
+</div>
+</div>
 <!-- Footer -->
-<footer class="w-100 ph3 ph5-m ph6-l mid-gray bg-custom-black pb2 pt3">
+<footer class="w-100  mid-gray bg-custom-black pb2 pt3 mt0">
   <small class="small-text-font f6 pb3 db tc silver fw1">© 2018 <b class="ttu">Mynah Marie</b>., All Rights Reserved</small>
 </footer>
+</article>
     <script type="text/javascript" src='main.js'></script>
   </body>
 </html>
