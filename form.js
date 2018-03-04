@@ -4,22 +4,21 @@
 
 //Rest All the fields
 function resetAll(arr){
-  // for(var i=0; i<arr.length; i++){
-  //   document.getElementById(arr[i]).value="";
-  //
-  // }
   arr.forEach(function(el) {
     document.getElementById(el).value = "";
   })
 }
 
-
-
 function sendEmail() {
+  //Still need to add the regex checks!!
+  var subject = document.getElementById('email-subject').value;
+  var email = document.getElementById('email-address').value;
+  var message = document.getElementById('email-message').value;
+
   emailjs.send("gmail","portfolio_inquiries",{
-    subject: document.getElementById('email-subject').value,
-    email: document.getElementById('email-address').value,
-    message: document.getElementById('email-message').value
+    subject: subject,
+    email: email,
+    message: message
   })
   .then(
       function(response) {
